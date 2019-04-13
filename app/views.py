@@ -20,5 +20,3 @@ def index():
     return render_template('index.html', title = title, general = general_news, business = business_news, sports = sports_news ) 
 
     
-    
-    
