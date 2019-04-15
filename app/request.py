@@ -1,6 +1,5 @@
-from app import app
 import urllib.request,json
-from .models.news import News, Article
+from .models import News, Article
 
 
 # Getting api key
@@ -10,10 +9,10 @@ api_key = 'db80159a19ff4fceac0d1b09a7288d5a'
 base_url = 'https://newsapi.org/v2/sources?language=en&category={}&apiKey={}'
 articles_url = 'https://newsapi.org/v2/top-headlines?sources={}&apiKey={}'
 
-# def configure_request(app):
-#     global api_key, base_url
-#     api_key = app.config[NEWS_API_KEY]
-#     base_url = app.config[NEWS_API_BASE_URL]
+def configure_request(app): 
+    global api_key, base_url
+    api_key = app.config[NEWS_API_KEY]
+    base_url = app.config[NEWS_API_BASE_URL]
 
 def get_news(category):
     '''
@@ -51,9 +50,9 @@ def process_results(news_list):
         language = news_item.get('language')
         country  = news_item.get('country')
 
-        if url:
-            news_object = News(id,name,description,url,category,language, country)
-            news_results.append(news_object)
+        #if url:
+        news_object = News(id,name,description,url,category,language, country)
+        news_results.append(news_object)
 
     return news_results
 

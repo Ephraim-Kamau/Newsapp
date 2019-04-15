@@ -1,11 +1,11 @@
-from flask import render_template
-from app import app
-from .request import get_news, get_news_item, Article
+from flask import render_template,request,redirect,url_for
+from . import main
+from ..request import get_news, get_news_item, Article  
 
 #movies is news
 
 # Views
-@app.route('/')
+@main.route('/')
 def index():
 
     '''
@@ -19,7 +19,7 @@ def index():
     title = 'Home - Welcome To The Best News Website Online'
     return render_template('index.html', title = title, general = general_news, business = business_news, sports = sports_news ) 
 
-@app.route('/news/<id>')
+@main.route('/news/<id>')
 def new(id):
 
     '''
@@ -30,11 +30,11 @@ def new(id):
 
     return render_template('news.html',title = title,new = new)    
 
-@app.route('/articles/<id>')
+@main.route('/articles/<id>')
 def articles(id):
     '''
-    View Source page function that returns news source details and its data
+    View articles page function that returns news article details and its data
     '''
 
-    news = get_articles(id)
+    news = get_news(id)
     return render_template('articles.html', id = id,  news = news)
