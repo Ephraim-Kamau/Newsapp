@@ -18,7 +18,7 @@ The News App is designed to help users who have busy schedules to catch up with 
 <li> The user opens up the terminal and navigates to where the application is stored.</li>
 <li> The user must ensure the virtual environment and Python are installed for the application to work. </li>
 <li> Use the following code to enable the virtual environment: source virtual/bin/activate </li>
-<li> Type in this code to start the application: python3.6 start.sh </li>
+<li> Type in this code to start the application:  ./start.sh </li>
 <li> Open the link provided in your brrowser and enjoy the articles. </li>
 </ul>
 
