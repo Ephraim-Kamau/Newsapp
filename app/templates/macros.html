@@ -2,7 +2,6 @@
 
     {% for news in news_list %}
         <div class="col-md-4">
-            <!-- <img src="{{ news.urlToImage }}" alt="{{ news.name }}"> -->
             <li class="text-left">
                 <a href="{{news.url}}" target = "_blank" >
                     {{ news.name|truncate(50)}}</a>
