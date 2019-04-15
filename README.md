@@ -1,4 +1,4 @@
-### NEWS APP
+### NEWS HIGHLIGHTS APP
 This is an application that allows users to access articles from various news sources and allows them to catch up with the lastest news.
 
 ### By Ephraim Kamau
@@ -19,7 +19,7 @@ The News App is designed to help users who have busy schedules to catch up with 
 <li> The user must ensure the virtual environment and Python are installed for the application to work. </li>
 <li> Use the following code to enable the virtual environment: source virtual/bin/activate </li>
 <li> Type in this code to start the application:  ./start.sh </li>
-<li> Open the link provided in your brrowser and enjoy the articles. </li>
+<li> Open the link provided in your browser and enjoy the articles. </li>
 </ul>
 
 ### Technologies Used
