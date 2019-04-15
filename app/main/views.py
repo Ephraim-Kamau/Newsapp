@@ -23,7 +23,7 @@ def index():
 def new(id):
 
     '''
-    View movie page function that returns the movie details page and its data
+    View news page function that returns the news details page and its data
     '''
     new = get_news_item(id)
     title = f'{new.title}'
