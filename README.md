@@ -1,5 +1,5 @@
 ### NEWS APP
-This is an application that allows users to access articles from various news sources, to allow them to catch up with the lastest news.
+This is an application that allows users to access articles from various news sources and allows them to catch up with the lastest news.
 
 ### By Ephraim Kamau
 
@@ -8,7 +8,7 @@ The News App is designed to help users who have busy schedules to catch up with 
 
 | Behaviour                                   |           Input                                          |    Output              |
 | --------------------------------            | :------------------------------------------------------- | -----------------------|
-|The user opens the News App                  | Click on any news source                                 | All the news articles  |
+|The user opens the News App                  | The user clicks on any news source                       | All the news articles  |
 |                                             |                                                          | are displayed          |                       
 
 

@@ -3,7 +3,7 @@
     {% for news in news_list %}
         <div class="col-md-4">
             <li class="text-left">
-                <a href="{{news.url}}" target = "_blank" >
+                <a href="/articles/{{news.id}}"x>
                     {{ news.name|truncate(50)}}</a>
                     <hr>  
         </li>
